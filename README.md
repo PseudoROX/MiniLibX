@@ -1,7 +1,6 @@
 
 #        MINILIBX DOC
 
---
 mlx_init()
  > connects to x-window
  
