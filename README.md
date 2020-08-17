@@ -3,7 +3,9 @@
 
 --
 mlx_init()
- > connects to x-window and returns void ptr
+ > connects to x-window
+ 
+ > return NULL or non-null pointer as window identifier
 
 new window:
  - void *mlx_new_window ( void *mlx_ptr, int size_x, int size_y, char *title );
