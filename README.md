@@ -1,5 +1,6 @@
 # MINILIBX LINUX INSTALL
  - clone minilibx https://github.com/gcamerli/minilibx
+ - cd minilibx
  - make
  - cp libmlx.a /usr/local/lib
  - cp include/mlx.h /usr/local/include
