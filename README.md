@@ -7,13 +7,13 @@ mlx_init()
  
  > return NULL or non-null pointer as mlx identifier
 
-new window:
+window management:
  - void *mlx_new_window ( void *mlx_ptr, int size_x, int size_y, char *title );
  >return NULL or non-null pointer as window identifier
  - int mlx_clear_window( void *mlx_ptr, void *win_ptr );
  - int mlx_destroy_window( void *mlx_ptr, void *win_ptr )
 
-pixel put:
+pixel output:
  - int mlx_pixel_put( void *mlx_ptr, void *win_ptr, int x, int y, int color );
  - int mlx_string_put( void *mlx_ptr, void *win_ptr, int x, int y, int color, char *string );
  - color int = 0 + r + g + b
@@ -33,6 +33,7 @@ image manipulation v2:
  - void *mlx_xpm_file_to_image ( void *mlx_ptr, char *filename, int *width, int *height );
 
 events:
+ > mlx_loop is basically update() in other engines
  - int mlx_loop ( void *mlx_ptr );
  - int mlx_key_hook ( void *win_ptr, int (*funct_ptr)(), void *param );
  - int mlx_mouse_hook ( void *win_ptr, int (*funct_ptr)(), void *param );
