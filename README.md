@@ -1,7 +1,7 @@
 
 #        MINILIBX DOC
-
-mlx_init()
+initialisation:
+ - mlx_init()
  > connects to x-window
  
  > return NULL or non-null pointer as mlx identifier
