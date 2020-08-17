@@ -1,5 +1,11 @@
+# MINILIBX LINUX INSTALL
+ - clone minilibx
+ - make
+ - cp libmlx.a /usr/local/lib
+ - cp include/mlx.h /usr/local/include
+ - cp man/man3/mlx*.1 /usr/local/man/man3
 
-#        MINILIBX DOC
+# MINILIBX DOC
 initialisation:
  - mlx_init()
  > connects to x-window
@@ -39,5 +45,5 @@ events:
  - int mlx_expose_hook ( void *win_ptr, int (*funct_ptr)(), void *param );
  - int mlx_loop_hook ( void *mlx_ptr, int (*funct_ptr)(), void *param );
 
-compile links:
- -lmlx -lXext -lX11
+compile :
+ -gcc FILE -L/usr/X11/lib /usr/X11/lib/libmlx.a -lXext -lX11
