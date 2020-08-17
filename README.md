@@ -1,6 +1,6 @@
-#############################
-#        MINILIBX DOC       #
-#############################
+
+#        MINILIBX DOC
+
 --
 mlx_init() //connects to x-window
            //and returns void ptr
