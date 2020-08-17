@@ -47,4 +47,4 @@ events:
  - int mlx_loop_hook ( void *mlx_ptr, int (*funct_ptr)(), void *param );
 
 compile :
- -gcc FILE -L/usr/X11/lib /usr/X11/lib/libmlx.a -lXext -lX11
+ > gcc FILE -L/usr/X11/lib /usr/X11/lib/libmlx.a -lXext -lX11
